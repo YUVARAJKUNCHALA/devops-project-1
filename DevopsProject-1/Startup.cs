@@ -1,7 +1,9 @@
+using DevopsProject_1.DbContexts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,6 +28,9 @@ namespace DevopsProject_1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<ApplicationDbContext>(options => 
+            options.UseSqlServer(@"Data Source=DESKTOP-ULRJRI0;Initial Catalog=MoviesDb;
+                    Integrated Security = True"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,9 +40,9 @@ namespace DevopsProject_1
             {
                 app.UseDeveloperExceptionPage();
             }
-
+           
             app.UseHttpsRedirection();
-
+            app.UseStaticFiles();   
             app.UseRouting();
 
             app.UseAuthorization();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yuvaraj_kunchala\\Documents\\DevopsProjects\\DevopsProject-1\\DevopsProject-1.csproj": {}
+    "C:\\Users\\yuvaraj_kunchala\\Documents\\DevopsProjects\\devops-project-1\\DevopsProject-1\\DevopsProject-1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yuvaraj_kunchala\\Documents\\DevopsProjects\\DevopsProject-1\\DevopsProject-1.csproj": {
+    "C:\\Users\\yuvaraj_kunchala\\Documents\\DevopsProjects\\devops-project-1\\DevopsProject-1\\DevopsProject-1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yuvaraj_kunchala\\Documents\\DevopsProjects\\DevopsProject-1\\DevopsProject-1.csproj",
+        "projectUniqueName": "C:\\Users\\yuvaraj_kunchala\\Documents\\DevopsProjects\\devops-project-1\\DevopsProject-1\\DevopsProject-1.csproj",
         "projectName": "DevopsProject-1",
-        "projectPath": "C:\\Users\\yuvaraj_kunchala\\Documents\\DevopsProjects\\DevopsProject-1\\DevopsProject-1.csproj",
+        "projectPath": "C:\\Users\\yuvaraj_kunchala\\Documents\\DevopsProjects\\devops-project-1\\DevopsProject-1\\DevopsProject-1.csproj",
         "packagesPath": "C:\\Users\\yuvaraj_kunchala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yuvaraj_kunchala\\Documents\\DevopsProjects\\DevopsProject-1\\obj\\",
+        "outputPath": "C:\\Users\\yuvaraj_kunchala\\Documents\\DevopsProjects\\devops-project-1\\DevopsProject-1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yuvaraj_kunchala\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,26 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
